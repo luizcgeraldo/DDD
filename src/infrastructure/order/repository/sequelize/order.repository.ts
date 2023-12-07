@@ -59,7 +59,6 @@ export default class OrderRepository {
         const items = orderModel.items;
 
         const item = new OrderItem(
-        const item = new OrderItem(
             items[0].id,
             items[0].name,
             items[0].price,

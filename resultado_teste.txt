@@ -1,0 +1,156 @@
+
+PS E:\GIT\DDD> npm test
+
+> test
+> npm run tsc -- --noEmit && jest
+
+
+> tsc
+> tsc --noEmit
+
+
+ RUNS  src/infrastructure/order/repository/sequelize/order.repository.spec.ts
+ RUNS  src/infrastructure/customer/repository/sequelize/customer.repository.spec.ts
+ RUNS  src/infrastructure/product/repository/sequelize/product.repository.spec.ts
+ RUNS  src/domain/product/factory/product.factory.spec.ts
+ RUNS  src/domain/checkout/factory/order.factory.spec.ts
+ RUNS  src/domain/customer/factory/customer.factory.spec.ts
+ RUNS  src/domain/checkout/service/order.service.spec.ts
+
+ RUNS  src/infrastructure/order/repository/sequelize/order.repository.spec.ts
+ RUNS  src/infrastructure/customer/repository/sequelize/customer.repository.spec.ts
+ RUNS  src/infrastructure/product/repository/sequelize/product.repository.spec.ts
+ RUNS  src/domain/product/factory/product.factory.spec.ts
+ RUNS  src/domain/checkout/factory/order.factory.spec.ts
+ RUNS  src/domain/customer/factory/customer.factory.spec.ts
+ RUNS  src/domain/checkout/service/order.service.spec.ts
+ PASS  src/domain/checkout/factory/order.factory.spec.ts
+
+ RUNS  src/infrastructure/order/repository/sequelize/order.repository.spec.ts
+ RUNS  src/infrastructure/customer/repository/sequelize/customer.repository.spec.ts
+ RUNS  src/infrastructure/product/repository/sequelize/product.repository.spec.ts
+ RUNS  src/domain/product/factory/product.factory.spec.ts
+ RUNS  src/domain/checkout/factory/order.factory.spec.ts
+ RUNS  src/domain/customer/factory/customer.factory.spec.ts
+ RUNS  src/domain/checkout/service/order.service.spec.ts
+
+ RUNS  src/infrastructure/order/repository/sequelize/order.repository.spec.ts
+ RUNS  src/infrastructure/customer/repository/sequelize/customer.repository.spec.ts
+ RUNS  src/infrastructure/product/repository/sequelize/product.repository.spec.ts
+ RUNS  src/domain/product/factory/product.factory.spec.ts
+ RUNS  src/domain/checkout/factory/order.factory.spec.ts
+ RUNS  src/domain/customer/factory/customer.factory.spec.ts
+ RUNS  src/domain/checkout/service/order.service.spec.ts
+ PASS  src/domain/customer/factory/customer.factory.spec.ts
+
+ RUNS  src/infrastructure/order/repository/sequelize/order.repository.spec.ts
+ RUNS  src/infrastructure/customer/repository/sequelize/customer.repository.spec.ts
+ RUNS  src/infrastructure/product/repository/sequelize/product.repository.spec.ts
+ RUNS  src/domain/product/factory/product.factory.spec.ts
+ RUNS  src/domain/checkout/factory/order.factory.spec.ts
+ RUNS  src/domain/customer/factory/customer.factory.spec.ts
+ RUNS  src/domain/checkout/service/order.service.spec.ts
+ PASS  src/domain/checkout/entity/order.spec.ts
+
+ RUNS  src/infrastructure/order/repository/sequelize/order.repository.spec.ts
+ RUNS  src/infrastructure/customer/repository/sequelize/customer.repository.spec.ts
+ RUNS  src/infrastructure/product/repository/sequelize/product.repository.spec.ts
+ RUNS  src/domain/product/factory/product.factory.spec.ts
+ RUNS  src/domain/checkout/factory/order.factory.spec.ts
+ RUNS  src/domain/customer/factory/customer.factory.spec.ts
+ RUNS  src/domain/checkout/service/order.service.spec.ts
+ PASS  src/domain/checkout/service/order.service.spec.ts
+
+ RUNS  src/infrastructure/order/repository/sequelize/order.repository.spec.ts
+ RUNS  src/infrastructure/customer/repository/sequelize/customer.repository.spec.ts
+ RUNS  src/infrastructure/product/repository/sequelize/product.repository.spec.ts
+ RUNS  src/domain/product/factory/product.factory.spec.ts
+ RUNS  src/domain/checkout/factory/order.factory.spec.ts
+ RUNS  src/domain/customer/factory/customer.factory.spec.ts
+ RUNS  src/domain/checkout/service/order.service.spec.ts
+ PASS  src/domain/product/entity/product.spec.ts
+
+ RUNS  src/infrastructure/order/repository/sequelize/order.repository.spec.ts
+ RUNS  src/infrastructure/customer/repository/sequelize/customer.repository.spec.ts
+ RUNS  src/infrastructure/product/repository/sequelize/product.repository.spec.ts
+ RUNS  src/domain/product/factory/product.factory.spec.ts
+ RUNS  src/domain/checkout/factory/order.factory.spec.ts
+ RUNS  src/domain/customer/factory/customer.factory.spec.ts
+ RUNS  src/domain/checkout/service/order.service.spec.ts
+ PASS  src/domain/customer/entity/customer.spec.ts
+
+ RUNS  src/infrastructure/order/repository/sequelize/order.repository.spec.ts
+ RUNS  src/infrastructure/customer/repository/sequelize/customer.repository.spec.ts
+ RUNS  src/infrastructure/product/repository/sequelize/product.repository.spec.ts
+ RUNS  src/domain/product/factory/product.factory.spec.ts
+ RUNS  src/domain/checkout/factory/order.factory.spec.ts
+ RUNS  src/domain/customer/factory/customer.factory.spec.ts
+ RUNS  src/domain/checkout/service/order.service.spec.ts
+ PASS  src/domain/@shared/event/event-dispatcher.spec.ts
+
+ RUNS  src/infrastructure/order/repository/sequelize/order.repository.spec.ts
+ RUNS  src/infrastructure/customer/repository/sequelize/customer.repository.spec.ts
+ RUNS  src/infrastructure/product/repository/sequelize/product.repository.spec.ts
+ RUNS  src/domain/product/factory/product.factory.spec.ts
+ RUNS  src/domain/checkout/factory/order.factory.spec.ts
+ RUNS  src/domain/customer/factory/customer.factory.spec.ts
+ RUNS  src/domain/checkout/service/order.service.spec.ts
+  ● Console
+
+    console.log
+      Sending email to .....
+
+      at SendEmailWhenProductIsCreatedHandler.log (src/domain/product/event/handler/send-email-when-product-is-created.handler.ts:8:17)
+          at Array.forEach (<anonymous>)
+
+
+ RUNS  src/infrastructure/order/repository/sequelize/order.repository.spec.ts
+ RUNS  src/infrastructure/customer/repository/sequelize/customer.repository.spec.ts
+ RUNS  src/infrastructure/product/repository/sequelize/product.repository.spec.ts
+ RUNS  src/domain/product/factory/product.factory.spec.ts
+ RUNS  src/domain/checkout/factory/order.factory.spec.ts
+ RUNS  src/domain/customer/factory/customer.factory.spec.ts
+ RUNS  src/domain/checkout/service/order.service.spec.ts
+ PASS  src/domain/product/factory/product.factory.spec.ts
+
+ RUNS  src/infrastructure/order/repository/sequelize/order.repository.spec.ts
+ RUNS  src/infrastructure/customer/repository/sequelize/customer.repository.spec.ts
+ RUNS  src/infrastructure/product/repository/sequelize/product.repository.spec.ts
+ RUNS  src/domain/product/factory/product.factory.spec.ts
+ RUNS  src/domain/checkout/factory/order.factory.spec.ts
+ RUNS  src/domain/customer/factory/customer.factory.spec.ts
+ RUNS  src/domain/checkout/service/order.service.spec.ts
+
+ RUNS  src/infrastructure/order/repository/sequelize/order.repository.spec.ts
+ RUNS  src/infrastructure/customer/repository/sequelize/customer.repository.spec.ts
+ RUNS  src/infrastructure/product/repository/sequelize/product.repository.spec.ts
+ PASS  dist/entity/order.spec.js
+
+ RUNS  src/infrastructure/order/repository/sequelize/order.repository.spec.ts
+ RUNS  src/infrastructure/customer/repository/sequelize/customer.repository.spec.ts
+ RUNS  src/infrastructure/product/repository/sequelize/product.repository.spec.ts
+ PASS  dist/entity/product.spec.js
+
+ RUNS  src/infrastructure/order/repository/sequelize/order.repository.spec.ts
+ RUNS  src/infrastructure/customer/repository/sequelize/customer.repository.spec.ts
+ RUNS  src/infrastructure/product/repository/sequelize/product.repository.spec.ts
+ PASS  dist/entity/customer.spec.js
+
+ RUNS  src/infrastructure/order/repository/sequelize/order.repository.spec.ts
+ RUNS  src/infrastructure/customer/repository/sequelize/customer.repository.spec.ts
+ RUNS  src/infrastructure/product/repository/sequelize/product.repository.spec.ts
+ PASS  src/domain/product/service/product.service.spec.ts
+
+ RUNS  src/infrastructure/order/repository/sequelize/order.repository.spec.ts
+ RUNS  src/infrastructure/customer/repository/sequelize/customer.repository.spec.ts
+ RUNS  src/infrastructure/product/repository/sequelize/product.repository.spec.ts
+ PASS  src/infrastructure/customer/repository/sequelize/customer.repository.spec.ts
+ PASS  src/infrastructure/product/repository/sequelize/product.repository.spec.ts
+ PASS  src/infrastructure/order/repository/sequelize/order.repository.spec.ts
+
+Test Suites: 15 passed, 15 total
+Tests:       61 passed, 61 total
+Snapshots:   0 total
+Time:        2.52 s, estimated 6 s
+Ran all test suites.
+PS E:\GIT\DDD>
