@@ -3,13 +3,13 @@ export default class Order {
     private _id: string;
     private _customerId: string;
     private _items: OrderItem[];
-    private _total: number;
+//    private _total: number;
 
     constructor(id: string, customerId: string, items: OrderItem[]) {
         this._id = id;
         this._customerId = customerId;
         this._items = items;
-        this._total = this.total();
+//        this._total = this.total();
         this.validate();
     }
 
@@ -25,8 +25,8 @@ export default class Order {
         return this._items;
     }
 
-    changeItens(itens: OrderItem[]) {
-        this._items = itens;
+    addItem(item: OrderItem) {
+        this._items.push(item);
     }
 
     validate(): boolean {
@@ -47,7 +47,9 @@ export default class Order {
         return true;
     }
 
-    total(): number {
-        return this._items.reduce((acc, item) => acc + item.total(), 0);
+    get total(): number {
+        return this._items.reduce((acc, item) => acc + item.total, 0);
     }
+
+
 }

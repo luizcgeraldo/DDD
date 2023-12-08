@@ -9,7 +9,7 @@ export default class OrderRepository {
             {
                 id: entity.id,
                 customer_id: entity.customerId,
-                total: entity.total(),
+                total: entity.total,
                 items: entity.items.map((item) => ({
                     id: item.id,
                     name: item.name,
@@ -25,27 +25,42 @@ export default class OrderRepository {
     }
 
     async update(entity: Order): Promise<void> {
-        await OrderModel.update(
-            {
-                customer_id: entity.customerId,
-                total: entity.total(),
-                items: entity.items.map((item) => ({
+
+        try {
+            await OrderModel.update(
+                {
+                    customer_id: entity.customerId,
+                    total: entity.total,
+                },
+                {
+                    where: {
+                        id: entity.id,
+                    },
+                }
+            );
+
+            await OrderItemModel.destroy({
+                where: {
+                    order_id: entity.id,
+                },
+            });
+
+            await OrderItemModel.bulkCreate(
+                entity.items.map((item) => ({
                     id: item.id,
                     name: item.name,
                     price: item.price,
                     product_id: item.productId,
                     quantity: item.quantity,
+                    order_id: entity.id,
                 })),
-            },
-            {
-                where: {
-                    id: entity.id,
-                },
-            }
-        );
+            );
+        } catch (error) {
+            throw error;
+        }
     }
 
-    async find(id: string): Promise<Order> {
+     async find(id: string): Promise<Order> {
         let orderModel;
         try {
             orderModel = await OrderModel.findOne({
