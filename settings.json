@@ -1,12 +1,12 @@
 {
   "[typescript]": {
-    "editor.formatOnSave": false,
+    "editor.formatOnSave": false
   },
   "eslint.autoFixOnSave": true,
   "eslint.validate": [
     "javascript",
-    "javascriptreact",
+    "javascript react",
     { "language": "typescript", "autoFix": true },
-    { "language": "typescriptreact", "autoFix": true }
+    { "language": "typescript-react", "autoFix": true }
   ]
 }

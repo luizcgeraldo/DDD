@@ -79,4 +79,5 @@ describe("Domain events tests", () => {
 
         expect(spyEventHandler).toHaveBeenCalled();
     });
+
 });
