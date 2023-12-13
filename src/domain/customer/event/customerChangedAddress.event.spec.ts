@@ -1,12 +1,12 @@
-import EventDispatcher  from "../../@shared/event/event-dispatcher";
+import EventDispatcher from "../../@shared/event/event-dispatcher";
 import CustomerChangedAddressEvent from "./customerChangedAddress.event";
-import SendConsoleLogAddressHandler  from "./handler/sendConsoleLogAddress.handler";
+import SendConsoleLogAddressHandler from "./handler/sendConsoleLogAddress.handler";
 
 describe("Customer changed of address event tests", () => {
     it("should notify the event handlers of the change of address of a customer", () => {
         const eventDispatcher = new EventDispatcher();
         const eventHandler1 = new SendConsoleLogAddressHandler();
-        const spyEventHandler = jest.spyOn(eventHandler1,"handle" );
+        const spyEventHandler = jest.spyOn(eventHandler1, "handle");
 
         eventDispatcher.register("CustomerChangedAddressEvent", eventHandler1);
 
@@ -20,15 +20,15 @@ describe("Customer changed of address event tests", () => {
                     street: "Street 1",
                     number: "123",
                     city: "São Paulo",
-                    zip: "13330-250"
+                    zip: "13330-250",
                 },
                 newAddress: {
                     street: "Rua nova",
                     number: "473",
                     city: "São Paulo",
-                    zip: "13330-000"
-                }
-            }
+                    zip: "13330-000",
+                },
+            },
         };
 
         const customerCreatedEvent = new CustomerChangedAddressEvent(eventPayload);
@@ -37,5 +37,4 @@ describe("Customer changed of address event tests", () => {
 
         expect(spyEventHandler).toHaveBeenCalled();
     });
-
 });

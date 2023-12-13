@@ -6,16 +6,16 @@ interface CustomerPayload {
     active: boolean;
 }
 
-export default  interface CustomerPayloadCreatedEvent {
+interface CustomerPayloadCreatedEvent {
     customer: CustomerPayload;
 }
 
-export default class CustomerCreatedEvent implements EventInterface {
-    dateTimeOccurred: Date;
+export class CustomerCreatedEvent implements EventInterface {
+    dataTimeOccurred: Date;
     eventData: CustomerPayloadCreatedEvent;
 
     constructor(eventPayload: CustomerPayloadCreatedEvent) {
-        this.dateTimeOccurred = new Date();
+        this.dataTimeOccurred = new Date();
         this.eventData = eventPayload;
     }
 }

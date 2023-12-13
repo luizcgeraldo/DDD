@@ -1,8 +1,7 @@
 import EventDispatcher from "../../@shared/event/event-dispatcher";
-import CustomerCreatedEvent from "./customerCreated.event";
+import { CustomerCreatedEvent } from "./customerCreated.event";
 import SendConsoleLog1Handler from "./handler/sendConsoleLog1.handler";
 import SendConsoleLog2Handler from "./handler/sendConsoleLog2.handler";
-import CustomerPayloadCreatedEvent from "./customerCreated.event";
 
 describe("Customer created event tests", () => {
     afterEach(function () {
